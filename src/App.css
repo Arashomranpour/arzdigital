@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.app {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.titlee {
+  flex: 1;
+  color: goldenrod;
+  cursor: pointer;
+  /* background-color: grey; */
+}
+
+.banner {
+  background-image: url("../public/banner2.jpg");
+  /* object-fit: cover;
+    */
+  height: 50vh;
+}
+
+.bannercontext {
+  height: 400;
+  /* background-color:grey; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 25;
+  justify-content: space-between;
+}
+
+.tagline {
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.Carousel {
+  height: 50%;
+  /* justify-content: center; */
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.caro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  color: gold;
+  text-transform: uppercase;
+}
+
+.roww {
+  cursor: pointer;
+
+}
+
+.roww:hover {
+  background-color: rgba(113, 117, 113, 0.881);
+}
+
+.containerr {
+
+  display: flex;
+
+}
+
+.sel {
+  border: 1px solid gold;
+  /* display: inline-block; */
+  white-space: nowrap;
+  /* width:2rem */
+  border-radius: 2px
+}
+
+.sel:hover {
+  background-color: rgb(73, 70, 59);
+
+}
+
+/* .market {
+  /* align-self: flex-start; */
+/* width: 100%;
+  padding-top: 10;
+} */
+.market {
+  font-weight: bold;
+  color: gold
+}
+
+.side {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-right: 1px solid goldenrod;
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .containerr {
+    /* background-color: blue; */
+    flex-direction: column;
+    align-items: center;
+    /* .rightt */
+  }
+
+  .rightt {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .side {
+    width: 100%;
+    border-right: none;
+    /* background-color: aliceblue; */
+  }
+
+}

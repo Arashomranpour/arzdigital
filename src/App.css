@@ -25,7 +25,7 @@ a {
 }
 
 .banner {
-  background-image: url("../public/banner2.jpg");
+  background-image: url("../src/banner2.jpg");
   /* object-fit: cover;
     */
   height: 50vh;

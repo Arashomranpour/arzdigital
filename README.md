@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🪙 Crypto Tracker (React)
 
-## Available Scripts
+**A cryptocurrency dashboard with live market data, a trending carousel, a searchable coin table and per-coin price charts.**
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?logo=chartdotjs&logoColor=white)
+![CoinGecko](https://img.shields.io/badge/CoinGecko-API-8DC647)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- 🏠 **Home banner** with a carousel of the **top trending coins** (24h change).
+- 📋 **Coin table** - top 100 coins by market cap with live search.
+- 💱 **Currency** kept in a shared React context, used by every API call.
+- 📈 **Coin page** - description, market data and a historical **price chart** with selectable time ranges (powered by Chart.js).
+- 🌐 Uses the free [CoinGecko API](https://www.coingecko.com/en/api) - no key required.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `npm run build`
+```bash
+git clone https://github.com/Arashomranpour/arzdigital.git
+cd arzdigital
+npm install
+npm start       # http://localhost:3000
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Build for production:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔗 Routes
 
-### `npm run eject`
+| Route | Page |
+|---|---|
+| `/` | Home - banner, trending carousel, coin table |
+| `/Coins/:id` | Coin details and historical chart |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── App.js  Header.js  CryptoContext.js  api.js
+└── components/
+    ├── Banner.js  Carousel.js        # Trending section
+    ├── Cointeble.js  Homepage.js     # Market table
+    ├── Coins.js  Coininfo.js         # Coin detail page + chart
+    └── selectedbutton.js  data.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`React` · `React Router` · `Chart.js (react-chartjs-2)` · `Axios` · `CoinGecko API`
